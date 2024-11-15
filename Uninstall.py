@@ -1,6 +1,5 @@
 import os
 import subprocess
-import time
 
 def uninstall_program(program_name):
     try:
@@ -32,5 +31,6 @@ programs_to_remove = ["MonkiTableOrderInstaller", "MonthlyKitchenPOS"]
 for program in programs_to_remove:
     uninstall_program(program)
 
-print("프로그램을 종료합니다. 새 버전을 설치해주세요")
-time.sleep(3)
+print("엔터를 누르면 프로그램이 종료됩니다 새 버전을 설치해주세요")
+input()
+print("프로그램을 종료합니다.")
