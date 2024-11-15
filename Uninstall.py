@@ -23,9 +23,9 @@ def uninstall_program_from_registry(root_key, uninstall_key_path, program_name):
                                 # 프로그램 제거 실행
                                 process = subprocess.Popen(uninstall_string, shell=True)
 
-                                # 확인 창 기다리기 및 처리 (5초 대기 후 Enter)
+                                # 확인 창 기다리기 및 처리 (5초 대기 후 o선택)
                                 time.sleep(5)  # 확인 창이 나타날 시간을 기다림
-                                pyautogui.press("o")  # Enter 키로 확인 창 처리
+                                pyautogui.press("o")  # o 키로 확인 창 처리
                                 
                                 process.wait()  # 제거 프로세스가 종료될 때까지 대기
                                 print(f"{display_name} has been successfully uninstalled.")
@@ -56,3 +56,4 @@ for program in programs_to_remove:
     uninstall_program(program)
 
 print("모든 제거가 완료되었습니다.")
+time.sleep(3)
