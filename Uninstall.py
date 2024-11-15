@@ -32,6 +32,6 @@ programs_to_remove = ["MonkiTableOrderInstaller", "MonthlyKitchenPOS"]
 for program in programs_to_remove:
     uninstall_program(program)
 
-print("아무 키를 누르면 프로그램이 종료됩니다 /n먼키 윈도우, 먼키 에이전트의 새 버전을 설치해주세요")
+print("아무 키를 누르면 프로그램이 종료됩니다 먼키 윈도우, 먼키 에이전트의 새 버전을 설치해주세요")
 keyboard.read_event()
 print("프로그램을 종료합니다.")
