@@ -9,11 +9,11 @@ def main():
     }
 
     while True:
-        print("\nChoose an option:")
-        print("1: MonkiTableOrderInstaller")
-        print("2: MonthlyKitchenPOS")
-        print("3: Both")
-        print("4: Exit")
+        print("\n삭제할 프로그램을 선택하세요:")
+        print("1: 윈도우즈 테이블오더")
+        print("2: 테이블오더 에이전트")
+        print("3: 윈도우즈, 에이전트 모두 삭제")
+        print("4: 종료")
 
         choice = input("Enter your choice (1, 2, 3, or 4): ").strip()
 
