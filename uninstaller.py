@@ -12,7 +12,7 @@ def uninstall_with_wmic(program_name):
             print(f"{program_name} is not installed via WMIC.")
             return False
 
-        uninstall_command = f'wmic product where "name like \'%{program_name}%\'" call uninstall /nointeractive /noreboot'
+        uninstall_command = f'wmic product where "name like \'%{program_name}%\'" call uninstall /nointeractive'
         print(f"Attempting to uninstall {program_name} using WMIC...")
         uninstall_process = subprocess.run(uninstall_command, shell=True, capture_output=True, text=True)
 
